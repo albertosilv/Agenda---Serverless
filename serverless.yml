@@ -1,0 +1,11 @@
+service: agenda
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  hello:
+    handler: src/handler.hello
+plugins:
+  - serverless-offline
