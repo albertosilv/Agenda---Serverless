@@ -1,6 +1,6 @@
 # Agenda - Serverless
 
-Este projeto é uma aplicação serverless para gerenciamento de agenda e eventos. Foi desenvolvida utilizando o **Serverless Framework** e permite a execução local através do plugin `serverless-offline`, sem necessidade de credenciais AWS.
+Este projeto é uma aplicação serverless para gerenciamento de agenda e eventos. Foi desenvolvida utilizando o **Serverless Framework e AWS Lambda** e permite a execução local através do plugin `serverless-offline`, sem necessidade de credenciais AWS.
 
 ## Funcionalidades
 
@@ -12,7 +12,9 @@ Este projeto é uma aplicação serverless para gerenciamento de agenda e evento
 ## Tecnologias Utilizadas
 
 - **Node.js**
+- **Typescript**
 - **Serverless Framework**
+- **AWS Lambda**
 - **Jest** para testes unitários
 
 ## Como Começar
