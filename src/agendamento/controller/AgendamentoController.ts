@@ -44,13 +44,4 @@ export class AgendamentoController {
       body: JSON.stringify(response),
     };
   }
-
-  public async getAgendamentos(event: APIGatewayEvent, context: Context) {
-    return {
-      statusCode: 200,
-      body: JSON.stringify({
-        agendamentos: this.agendaService.getAgendamentos(),
-      }), // Simulação
-    };
-  }
 }

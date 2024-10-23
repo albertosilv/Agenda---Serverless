@@ -13,10 +13,10 @@ functions:
           method: post
 
   getAgendamentos:
-    handler: handler.getAgendamentos
+    handler: handler.getAgenda
     events:
       - http:
-          path: agendamentos
+          path: agendas
           method: get
 plugins:
   - serverless-offline
