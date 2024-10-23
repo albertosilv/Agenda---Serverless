@@ -5,7 +5,18 @@ provider:
   runtime: nodejs14.x
 
 functions:
-  hello:
-    handler: src/handler.hello
+  createAgendamento:
+    handler: handler.createAgendamento
+    events:
+      - http:
+          path: agendamentos
+          method: post
+
+  getAgendamentos:
+    handler: handler.getAgendamentos
+    events:
+      - http:
+          path: agendamentos
+          method: get
 plugins:
   - serverless-offline
