@@ -6,7 +6,7 @@ import {
   getAllAgendaDTO,
   IMedicoComHorarios,
 } from "../src/agenda/dto/getAllAgendaDTO";
-import medicos from "../src/agendamento/mock/medicoMock"; // Importe seus dados mock
+import medicos from "../src/agendamento/mock/medicoMock";
 import { IMedico } from "../src/agendamento/mock/medicoMock";
 import { IAgendamento } from "../src/agendamento/interface/IAgendamento";
 
@@ -20,8 +20,8 @@ describe("AgendaController", () => {
   });
 
   test("deve retornar dados de agenda transformados", async () => {
-    const agenda = agendamentoService.getAgendamentos(); // Obtém agendamentos
-    const mockMedicosComHorarios = transformarDados(medicos, agenda); // Transforma dados
+    const agenda = agendamentoService.getAgendamentos();
+    const mockMedicosComHorarios = transformarDados(medicos, agenda);
 
     const event = {} as APIGatewayEvent;
     const context = {} as Context;
