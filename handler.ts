@@ -12,6 +12,6 @@ export const createAgendamento = async (
   return agendamentoController.createAgendamento(event, context);
 };
 
-export const gteetAgenda = async (event: APIGatewayEvent, context: Context) => {
+export const getAgenda = async (event: APIGatewayEvent, context: Context) => {
   return agendaController.getAgenda(event, context);
 };
