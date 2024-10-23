@@ -12,15 +12,14 @@ export function transformarDados(
         .filter((agendamento) => agendamento.medico_id === medico.id)
         .map((agendamento) => agendamento.data_horario);
 
-      // Retornar objeto do médico com horários disponíveis
       return {
         id: medico.id,
         nome: medico.nome,
-        especialidade: medico.cargo, // Supondo que `cargo` seja a especialidade
+        especialidade: medico.cargo,
         horarios_disponiveis: horarios,
       };
     })
-    .filter((medico) => medico.horarios_disponiveis.length > 0); // Filtra médicos sem horários
+    .filter((medico) => medico.horarios_disponiveis.length > 0);
 
-  return { medicos: agenda }; // Retorna a estrutura correta
+  return { medicos: agenda };
 }

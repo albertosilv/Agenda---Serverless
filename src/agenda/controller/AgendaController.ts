@@ -1,4 +1,3 @@
-// agendamento/controller/AgendamentoController.ts
 import { APIGatewayEvent, Context } from "aws-lambda";
 import { AgendamentoService } from "../../agendamento/service/AgendamentoService";
 import { IAgendamentoService } from "../../agendamento/service/IAgendamentoService";
@@ -10,7 +9,7 @@ export class AgendaController {
   private agendaService: IAgendamentoService;
 
   constructor() {
-    this.agendaService = new AgendamentoService(); // Instância do serviço
+    this.agendaService = new AgendamentoService();
   }
 
   public async getAgenda(event: APIGatewayEvent, context: Context) {
