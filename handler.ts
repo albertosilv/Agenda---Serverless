@@ -1,5 +1,5 @@
 import { APIGatewayEvent, Context } from "aws-lambda";
-import { AgendamentoController } from "./agendamento/controller/AgendamentoController";
+import { AgendamentoController } from "./src/agendamento/controller/AgendamentoController";
 
 const agendamentoController = new AgendamentoController();
 

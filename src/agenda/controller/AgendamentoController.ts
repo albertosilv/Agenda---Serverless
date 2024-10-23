@@ -2,11 +2,12 @@
 import { APIGatewayEvent, Context } from "aws-lambda";
 import { CreateAgendamentoDTO } from "../dto/CreateAgendamentoRequestDTO";
 import { CreateAgendamentoResponseDTO } from "../dto/CreateAgendamentoResponseDTO";
-import { IAgendaentoService } from "../service/IAgendamentoService";
+import { IAgendamentoService } from "../service/IAgendamentoService";
 import { AgendamentoService } from "../service/AgendamentoService";
 import medicos from "../mock/medicoMock";
+
 export class AgendamentoController {
-  private agendaService: IAgendaentoService;
+  private agendaService: IAgendamentoService;
 
   constructor() {
     this.agendaService = new AgendamentoService(); // Instância do serviço
