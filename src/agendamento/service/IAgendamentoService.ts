@@ -1,5 +1,5 @@
 import { IAgendamento } from "../interface/IAgendamento";
-export interface IAgendaService {
+export interface IAgendaentoService {
   createAgendamento(agendamentoData: any): any;
   getAgendamentos(): IAgendamento[];
 }
