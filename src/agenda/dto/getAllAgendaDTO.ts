@@ -1,4 +1,4 @@
-interface IMedicoComHorarios {
+export interface IMedicoComHorarios {
   id: number;
   nome: string;
   especialidade: string;
