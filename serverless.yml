@@ -9,7 +9,7 @@ functions:
     handler: handler.createAgendamento
     events:
       - http:
-          path: agendamentos
+          path: agendamento
           method: post
 
   getAgendamentos:

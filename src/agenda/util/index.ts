@@ -5,7 +5,7 @@ export function transformarDados(
   medicos: IMedico[],
   agendamentos: IAgendamento[]
 ): getAllAgendaDTO {
-  return medicos
+  const agenda: getAllAgendaDTO = medicos
     .map((medico) => {
       const horarios = agendamentos
         .filter((agendamento) => agendamento.medico_id === medico.id)
@@ -19,4 +19,6 @@ export function transformarDados(
       };
     })
     .filter((medico) => medico.horarios_disponiveis.length > 0);
+
+  return agenda;
 }
